@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Memory Card Flip Game — match all pairs in the fewest moves!" />
+  <title>Memory Card Flip Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header__brand">
+        <span class="header__logo" aria-hidden="true">🎮</span>
+        <h1 class="header__title">Memory Flip</h1>
+      </div>
+      <p class="header__subtitle">Match the fruit pairs in the fewest moves</p>
+    </header>
+
+    <section class="controls" aria-label="Game controls">
+      <div class="controls__group">
+        <label for="difficulty" class="controls__label">Difficulty</label>
+        <select id="difficulty" class="controls__select">
+          <option value="easy">Easy (4×4)</option>
+          <option value="medium" selected>Medium (4×5)</option>
+          <option value="hard">Hard (6×6)</option>
+        </select>
+      </div>
+      <button id="new-game-btn" class="btn btn--primary" type="button">New Game</button>
+    </section>
+
+    <section class="stats" aria-label="Game statistics">
+      <div class="stat">
+        <span class="stat__label">Moves</span>
+        <span id="moves" class="stat__value">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">Time</span>
+        <span id="timer" class="stat__value">0:00</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">Pairs</span>
+        <span id="pairs" class="stat__value">0 / 0</span>
+      </div>
+      <div class="stat stat--highlight">
+        <span class="stat__label">Best</span>
+        <span id="best-score" class="stat__value">—</span>
+      </div>
+    </section>
+
+    <main class="game-board" id="game-board" role="grid" aria-label="Memory card grid"></main>
+
+    <footer class="footer">
+      <p>Click a card to flip it and reveal a fruit. Match two identical fruits to keep them face up.</p>
+    </footer>
+  </div>
+
+  <!-- Win modal -->
+  <div id="win-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="win-title" hidden>
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <div class="modal__icon" aria-hidden="true">🏆</div>
+      <h2 id="win-title" class="modal__title">You Win!</h2>
+      <p class="modal__message">All pairs matched.</p>
+      <dl class="modal__stats">
+        <div class="modal__stat-row">
+          <dt>Moves</dt>
+          <dd id="final-moves">0</dd>
+        </div>
+        <div class="modal__stat-row">
+          <dt>Time</dt>
+          <dd id="final-time">0:00</dd>
+        </div>
+        <div class="modal__stat-row modal__stat-row--highlight">
+          <dt>Score</dt>
+          <dd id="final-score">0</dd>
+        </div>
+      </dl>
+      <p id="new-record" class="modal__record" hidden>🎉 New personal best!</p>
+      <div class="modal__actions">
+        <button id="play-again-btn" class="btn btn--primary" type="button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
