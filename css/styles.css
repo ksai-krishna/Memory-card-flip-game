@@ -7,8 +7,8 @@
   --accent: #7c3aed;
   --accent-light: #a78bfa;
   --accent-glow: rgba(124, 58, 237, 0.35);
-  --success: #34d399;
-  --success-glow: rgba(52, 211, 153, 0.3);
+  --success: #4fb98d;
+  --success-glow: rgba(79, 185, 141, 0.4);
   --text-primary: #f8f7ff;
   --text-secondary: #9896b0;
   --text-muted: #6b6985;
@@ -239,6 +239,8 @@ body {
   -webkit-transform-style: preserve-3d;
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: var(--radius-md);
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .card--flipped .card__inner,
@@ -258,7 +260,6 @@ body {
   justify-content: center;
   gap: 0.35rem;
   user-select: none;
-  overflow: hidden;
 }
 
 .card__face--back {
@@ -298,26 +299,10 @@ body {
   padding: 0.35rem;
 }
 
-.card__fruit-img {
-  width: clamp(40px, 55%, 56px);
-  height: clamp(40px, 55%, 56px);
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
-  pointer-events: none;
-}
-
 .card__fruit-fallback {
   font-size: 2.25rem;
   line-height: 1;
   pointer-events: none;
-}
-
-.card__fruit-fallback[hidden] {
-  display: none !important;
-}
-
-.card__fruit-img[hidden] {
-  display: none;
 }
 
 .card__fruit-label {
@@ -333,18 +318,18 @@ body {
   pointer-events: none;
 }
 
-.card--flipped:not(.card--matched) .card__inner {
+.card--flipped:not(.card--matched) {
   filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.35));
 }
 
 .card--matched .card__face--front {
   border-color: var(--success);
-  background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 100%);
-  box-shadow: var(--shadow-card), 0 0 16px var(--success-glow);
+  background: linear-gradient(180deg, #f4fbf8 0%, #dcf0e6 100%);
+  box-shadow: var(--shadow-card), 0 0 18px var(--success-glow);
 }
 
 .card--matched .card__fruit-label {
-  color: #047857;
+  color: #1f6e4f;
 }
 
 .card--matched .card__inner {
@@ -487,9 +472,8 @@ body {
     grid-template-columns: repeat(4, minmax(64px, 1fr));
   }
 
-  .card__fruit-img {
-    width: clamp(36px, 50%, 48px);
-    height: clamp(36px, 50%, 48px);
+  .card__fruit-fallback {
+    font-size: 1.85rem;
   }
 
   .card__fruit-label {

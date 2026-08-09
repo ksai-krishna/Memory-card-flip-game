@@ -1,0 +1,460 @@
+Total pages: 26
+--- PAGE 1 ---
+M.Tech, Dept. of CSE, CITech 1  
+ 
+VISVESVARAYA TECHNOLOGICAL UNIVERSITY 
+"JNANA SANGAMA", MACHHE, BELAGAVI-590018 
+ 
+Mini Project Report on 
+Cloud-Based Event Management Portal using Microsoft Azure  
+Submitted in partial fulfillment of the requirements for the award of the degree 
+Master of Technology 
+in 
+Computer Science and Engineering 
+of 
+Visvesvaraya Technological University, Belagavi. 
+By
+--- PAGE 2 ---
+M.Tech, Dept. of CSE, CITech 2  
+ 
+Table of Contents 
+Chapter & Title Page No. 
+CHAPTER 1 – INTRODUCTION 2 
+1.1 Background 2 
+1.2 Problem Statement 2 
+1.3 Objectives 3 
+1.4 Scope of the Project 3 
+1.5 Research Gap 3 
+1.6 Proposed System 4 
+1.7 Contributions 4 
+1.8 Organization of the Report 5 
+CHAPTER 2 – LITERATURE SURVEY 6 
+2.1 Introduction 6 
+2.2 Literature Review 6 
+2.3 Comparative Analysis 8 
+--- PAGE 3 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.5 Use Case Diagram 11 
+CHAPTER 4 – METHODOLOGY 12 
+CHAPTER 5 – IMPLEMENTATION 13 
+CHAPTER 6 – RESULTS AND 
+DISCUSSION 
+14 
+CHAPTER 7 – CONCLUSION AND 
+FUTURE SCOPE 
+17 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- PAGE 4 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+List of Figures 
+ 
+Figure No. Figure Title Page No. 
+Fig. 3.1 System Architecture 10 
+Fig. 3.2 Flow Diagram 11 
+Fig. 3.3 Use Case Diagram 11 
+Fig. 5.1 
+Home Page of Event 
+Management Portal 
+14 
+Fig. 5.2 
+About Page of Event 
+Management Portal 
+14 
+Fig. 5.3 Upcoming Events Pag
+--- PAGE 5 ---
+M.Tech, Dept. of CSE, CITech 1 
+ 
+ 
+CHAPTER  1  
+ INTRODUCTION 
+ 
+ 
+1.1 Background 
+The rapid growth of cloud computing has transformed the way web applications  are developed, 
+deployed, and maintained. Organizations and educational institutions increasingly rely on cloud 
+platforms to host applications because they provide high availability, scalability, reliability, and 
+secure access from any 
+--- PAGE 6 ---
+M.Tech, Dept. of CSE, CITech 2 
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.2 Problem Statement 
+Many educational institutions and organizations continue to manage events using manual 
+registration methods or basic web pages that lack automation and cloud deployment. These 
+traditional systems make it difficult to m
+--- PAGE 7 ---
+M.Tech, Dept. of CSE, CITech 3 
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.4 Scope of the Project 
+The scope of the proposed project is to develop a cloud -based web application that provides 
+an efficient platform for managing event -related information. The application enables users 
+to view upcoming events, brow
+--- PAGE 8 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+M.Tech, Dept. of CSE, CITech 4 
+ 
+ 
+ 
+1.6 Proposed System 
+The proposed system is a cloud -hosted Event Management Portal developed using HTML, 
+CSS, and JavaScript. The application provides users with a centralized platform to access event 
+information, browse schedules, and register for various events through an in tuitive web 
+interface
+--- PAGE 9 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+M.Tech, Dept. of CSE, CITech 5 
+ 
+ 
+ Demonstrated practical implementation of cloud computing concepts in web 
+application deployment.  
+ Created a scalable and maintainable application architecture suitable for future 
+enhancements.  
+ Provided an educational example of integrating GitHub, Azure DevOps, and Microsoft 
+Azure into a comp
+--- PAGE 10 ---
+M.Tech, Dept. of CSE, CITech 6 
+ 
+ 
+CHAPTER 2  
+ LITERATURE SURVEY 
+2.1 Introduction 
+Cloud computing has significantly transformed the development and deployment of modern web 
+applications by providing scalable, reliable, and cost-effective infrastructure. Organizations and 
+educational institutions increasingly use cloud platforms such as Microsoft Azure to host 
+applications, ensuring high ava
+--- PAGE 11 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+M.Tech, Dept. of CSE, CITech 7 
+ 
+ 
+GitHub. Azure App Service simplifies application deployment while improving performance and 
+reliability. 
+Advantages 
+ Provides secure and reliable cloud hosting.  
+ Supports automatic deployment and scaling.  
+ Easily integrates with GitHub and Azure DevOps.  
+Limitations 
+ Requires internet connec
+--- PAGE 12 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+M.Tech, Dept. of CSE, CITech 8 
+ 
+ 
+Paper 3  
+Web-Based Event Management Systems for Educational Institutions (2024) 
+Authors: Various Researchers 
+This study focuses on web -based event management systems that simplify event organization 
+through online registration and centralized event information. The research highlights that digital 
+
+--- PAGE 13 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+M.Tech, Dept. of CSE, CITech 9 
+ 
+ 
+ 
+ 
+2.4 Research Gap 
+The literature survey indicates that existing event management systems primarily focus on 
+online registration and basic website functionality, while cloud hosting platforms mainly 
+emphasize scalable application deployment. Similarly, GitHub provides efficient version 
+control and 
+--- PAGE 14 ---
+M.Tech, Dept. of CSE, CITech 9 
+ 
+ 
+CHAPTER 3  
+ SYSTEM ANALYSIS AND DESIGN 
+ 
+3.1 Existing System 
+Traditional event management systems are primarily based on manual registration methods, 
+spreadsheets, or simple static websites. Event organizers often collect participant information 
+using paper forms or online forms that require manual processing. These methods make it 
+difficult to maintain ev
+--- PAGE 15 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 10 
+ 
+  
+3.3 System Architecture 
+The proposed Event Management Portal follows a cloud -based client -server architecture 
+integrated with GitHub and Microsoft Azure services. 
+i.The user accesses the Event Management Portal through a web browser.  
+ii. The frontend developed using HTML, CSS, and JavaScript d
+--- PAGE 16 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 10 
+ 
+  
+xvi. Developers can update the application, add new events, or modify the website by making 
+changes to the source code and pushing them to GitHub, where Azure DevOps automatically 
+deploys the updated version. 
+The proposed Cloud-Based Event Management Portal  follows a cloud -based client -server 
+
+--- PAGE 17 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 10 
+ 
+  
+3.4 Flow Diagram
+
+--- PAGE 18 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 11 
+ 
+ 
+3.5 Use Case Diagram 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 19 ---
+M.Tech, Dept. of CSE, CITech 12 
+ 
+ 
+CHAPTER 4 
+METHODOLOGY 
+The proposed Cloud-Based Event Management Portal using Microsoft Azure and GitHub  
+follows a structured methodology to provide an efficient and user-friendly platform for managing 
+event information and registrations through a cloud -hosted web application. The development 
+process begins with designing the frontend using HTML, CSS, and
+--- PAGE 20 ---
+M.Tech, Dept. of CSE, CITech 13 
+ 
+ 
+CHAPTER 5 
+IMPLEMENTATION 
+The implementation of the Cloud-Based Event Management Portal using Microsoft Azure and 
+GitHub was carried out using HTML, CSS, and JavaScript, following a modular web application 
+architecture. The frontend was developed using HTML for structuring web pages, CSS for 
+designing an attractive and responsive user interface, and JavaScr
+--- PAGE 21 ---
+M.Tech, Dept. of CSE, CITech 14 
+ 
+ 
+CHAPTER 6 
+RESULTS AND DISCUSSION 
+ 
+The proposed CloudVault – Secure Cloud File Manager using Microsoft Azure was 
+successfully designed, developed, and tested. The application provides a secure and user-
+friendly platform for managing files in the cloud using Microsoft Azure Blob Storage. The 
+integration of Flask, SQLite, and  Azure Blob Storage enables user
+--- PAGE 22 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 15 
+ 
+ 
+ 
+ 
+ 
+Fig 5.2 About Page of Event Management Portal 
+ 
+ 
+Fig 5.3 Upcoming Events Page of Event Management Portal 
+
+--- PAGE 23 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 16 
+ 
+ 
+ 
+ 
+Fig 5.4 Event Registration Page 
+ 
+Fig 5.5 Registration Success Message 
+ 
+ 
+
+--- PAGE 24 ---
+Cloud-Based Event Management Portal using Microsoft Azure 
+ 
+M.Tech, Dept. of CSE, CITech 17 
+ 
+ 
+ 
+\\ 
+Fig. 5.6: Azure DevOps Pipeline 
+
+--- PAGE 25 ---
+M.Tech, Dept. of CSE, CITech 18
+8 
+ 
+ 
+CHAPTER 7     
+CONCLUSION AND FUTURE SCOPE 
+ 
+ 
+The Cloud-Based Event Management Portal using Microsoft Azure and GitHub was successfully 
+designed, developed, and deployed as a responsive web application that simplifies the process of 
+managing events and participant registrations. The application provides users with an intuitive 
+interface to browse upcomin
+--- PAGE 26 ---
+ 
+ 
+ 

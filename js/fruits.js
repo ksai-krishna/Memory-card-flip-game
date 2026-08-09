@@ -19,18 +19,3 @@ export const FRUITS = [
   { name: "Avocado", emoji: "🥑" },
   { name: "Tomato", emoji: "🍅" },
 ];
-
-const TWEMOJI_BASE =
-  "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72";
-
-/**
- * PNG fruit icon URL (Twemoji) — renders consistently in all browsers.
- * @param {string} emoji
- * @returns {string}
- */
-export function fruitImageUrl(emoji) {
-  const codePoint = [...emoji]
-    .map((char) => char.codePointAt(0).toString(16))
-    .join("-");
-  return `${TWEMOJI_BASE}/${codePoint}.png`;
-}

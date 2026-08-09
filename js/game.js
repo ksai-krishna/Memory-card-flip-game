@@ -7,7 +7,7 @@ import {
   saveBestScore,
   formatBestScore,
 } from "./utils.js";
-import { FRUITS, fruitImageUrl } from "./fruits.js";
+import { FRUITS } from "./fruits.js";
 
 const FLIP_BACK_DELAY_MS = 1500;
 
@@ -105,7 +105,6 @@ export class MemoryGame {
       btn.className = "card";
       btn.dataset.index = String(index);
       btn.setAttribute("aria-label", "Face down card");
-      const imgSrc = fruitImageUrl(card.emoji);
       btn.innerHTML = `
         <span class="card__inner">
           <span class="card__face card__face--back" aria-hidden="true">
@@ -113,20 +112,12 @@ export class MemoryGame {
             <span class="card__back-text">Flip</span>
           </span>
           <span class="card__face card__face--front" aria-hidden="true">
-            <img class="card__fruit-img" src="${imgSrc}" alt="" width="56" height="56" decoding="async" />
-            <span class="card__fruit-fallback" hidden>${card.emoji}</span>
+            <span class="card__fruit-fallback">${card.emoji}</span>
             <span class="card__fruit-label">${card.name}</span>
           </span>
         </span>
       `;
       btn.addEventListener("click", () => this.handleCardClick(index));
-
-      const img = btn.querySelector(".card__fruit-img");
-      const fallback = btn.querySelector(".card__fruit-fallback");
-      img?.addEventListener("error", () => {
-        img.hidden = true;
-        if (fallback) fallback.hidden = false;
-      });
 
       this.boardEl.appendChild(btn);
     });
@@ -137,7 +128,6 @@ export class MemoryGame {
     if (this.isLocked || !this.isPlaying) return;
 
     const cardEl = this.boardEl.children[index];
-    const card = this.cards[index];
 
     if (
       cardEl.classList.contains("card--flipped") ||
